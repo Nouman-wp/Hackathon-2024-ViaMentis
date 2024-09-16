@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViaMentis - Career Quiz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <button id="sidebar-toggle" class="sidebar-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="logo">
+                <i class="fas fa-compass"></i>
+                <span>ViaMentis</span>
+            </div>
+        </div>
+        <div class="header-center">
+            <form class="search-form">
+                <input type="search" placeholder="Search resources...">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+        <div class="header-right">
+            <div class="profile-section">
+                <img src="image.png" alt="Profile" class="profile-image">
+                <span class="profile-name">Areeb Pro</span>
+            </div>
+            <div class="mode-switch">
+                <input type="checkbox" id="mode-toggle">
+                <label for="mode-toggle">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </label>
+            </div>
+        </div>
+    </header>
+
+    <div class="sidebar" id="sidebar">
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="quiz.html" class="active"><i class="fas fa-question-circle"></i> Career Quiz</a></li>
+                <li><a href="resources.html"><i class="fas fa-book"></i> Resources</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <section id="quiz" aria-labelledby="quiz-title">
+            <h1 id="quiz-title">Career Aptitude Quiz</h1>
+            <div id="quiz-intro">
+                <p class="quiz-description">Discover your ideal career path with our comprehensive aptitude quiz. This assessment is designed to evaluate your interests, skills, and preferences across various professional domains.</p>
+                <h2>What to Expect:</h2>
+                <ul>
+                    <li>20 thought-provoking questions</li>
+                    <li>Multiple-choice format</li>
+                    <li>Takes approximately 5-10 minutes to complete</li>
+                    <li>Personalized career suggestions based on your responses</li>
+                </ul>
+                <p>Ready to uncover your professional potential? Click the button below to begin!</p>
+                <button id="start-quiz" class="cta-button">Start Career Quiz</button>
+            </div>
+            <div id="quiz-container" style="display: none;">
+                <div id="progress-bar" aria-label="Quiz progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+                <div id="question-container" aria-live="polite"></div>
+                <button id="next-btn" class="cta-button">Next</button>
+            </div>
+            <div id="result-container" aria-live="polite"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 The TechGeeks. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

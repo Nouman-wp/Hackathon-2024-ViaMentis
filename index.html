@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViaMentis - Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay muted loop id="background-video">
+            <source src="./5725950-uhd_3840_2160_30fps.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <header>
+        <div class="header-left">
+            <button id="sidebar-toggle" class="sidebar-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="logo">
+                <i class="fas fa-compass"></i>
+                <span>ViaMentis</span>
+            </div>
+        </div>
+        <div class="header-center">
+            <form class="search-form">
+                <input type="search" placeholder="Search resources...">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+        <div class="header-right">
+            <div class="profile-section">
+                <img src="image.png" alt="Profile" class="profile-image">
+                <span class="profile-name">Areeb Pro</span>
+            </div>
+            <div class="mode-switch">
+                <input type="checkbox" id="mode-toggle">
+                <label for="mode-toggle">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </label>
+            </div>
+        </div>
+    </header>
+
+    <div class="sidebar" id="sidebar">
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="quiz.html"><i class="fas fa-question-circle"></i> Career Quiz</a></li>
+                <li><a href="resources.html"><i class="fas fa-book"></i> Resources</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <section id="home">
+            <h1>Welcome to ViaMentis</h1>
+            <p>Paving Your Path to a Brighter Future</p>
+            <p>Navigate your future with confidence. Discover the perfect career path that aligns with your passions and skills.</p>
+            <div class="cta-buttons">
+                <a href="quiz.html" class="cta-button">Take Career Quiz</a>
+                <a href="auth.html" class="auth-button">Sign In / Sign Up</a>
+            </div>
+            <div class="featured-resources">
+                <h2>Featured Resources</h2>
+                <ul>
+                    <li><a href="#">Top 10 In-Demand Careers for 2024</a></li>
+                    <li><a href="#">How to Write a Winning Resume</a></li>
+                    <li><a href="#">Mastering the Job Interview: Tips and Tricks</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>&copy; 2024 The TechGeeks. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
